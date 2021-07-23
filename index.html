@@ -25,7 +25,7 @@ background-repeat: no-repeat; background-size: 100% 500%;
 	Enter the marks of <b>4 papers with highest marks</b> of your <b>Madhyamik exam</b>:
 	<p>
 		
-	<input id = "t1" type = "number" oninput = "javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "3" placeholder = "Marks 1" style="font-size : 48px; text-align: center; font-family:Courier; width: 210px; height: 100px;">
+<input id = "t1" type = "number" oninput = "javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "3" placeholder = "Marks 1" style="font-size : 48px; text-align: center; font-family:Courier; width: 210px; height: 100px;">
 
 <input id = "t2" type = "number" oninput = "javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "3" placeholder = "Marks 2" style="font-size : 48px; text-align: center; font-family:Courier; width: 210px; height: 100px;">
 
@@ -128,7 +128,7 @@ var l = Math.round((x + 20 + (48 * g)));
 var m = Math.round((x + 20 + (48 * i)));
 var n = Math.round((y + 30 + (42 * h)));
 var o = Math.round((y + 30 + (42 * j)));
-var q = Math.min(m , n , o);
+var q = Math.min(k , l , m , n , o);
 
 var s = (k -(- l) -(- m) -(- n) -(- o) -(- o));
 var p = (Math.round(100 * s / 6) / 100);
@@ -140,7 +140,7 @@ var u = (Math.round(100 * t / 5) / 100);
          if (r == true) {
          alert("Marks obtained:\n1st language: " + k + "\n2nd language: " + l + "\nMaths: " + m + "\nPhysics: " + o + "\nChemistry: " + o + "\nBiology: " + n + "\nTotal: " + s + "/600" + "\nPercentage: " + p + "%");
          
-         alert("Considering best 5 papers (language papers compulsory),\nYour obtained marks will be:\nTotal: " + t + " / 500" + "\nPercentage: " + u + " %");
+         alert("Considering best 5 papers,\nYour obtained marks will be:\nTotal: " + t + " / 500" + "\nPercentage: " + u + " %");
          
          if (u > 90) {alert("Congratulations!\nYou've got AA (Outstanding) grade for marks above 90%")} else {if (u > 80) {alert("Congratulations!\nYou've got A+ (Excellent) grade for marks above 80%")} else {if (u > 60) {alert("Congratulations!\nYou've got A (Very good) grade for marks above 60%")} else {alert("You've potential in you!\nI'm sorry, but you didn't get an A graded marks :(")}}}
     }   else    {
@@ -187,7 +187,7 @@ var k = Math.round((x + 20 + (48 * e)));
 var l = Math.round((x + 20 + (48 * g)));
 var m = Math.round((x + 20 + (48 * i)));
 var o = Math.round((y + 30 + (42 * j)));
-var q = Math.min(m , o);
+var q = Math.min(k , l , m , o);
 
 var s = (k -(- l) -(- m) -(- o) -(- o) -(- o));
 var p = (Math.round(100 * s / 6) / 100);
@@ -199,7 +199,7 @@ var u = (Math.round(100 * t / 5) / 100);
          if (r == true) {
          alert("Marks obtained:\n1st language: " + k + "\n2nd language: " + l + "\nMaths: " + m + "\nPhysics: " + o + "\nChemistry: " + o + "\nStatistics: " + o + "\nTotal: " + s + " / 600" + "\nPercentage: " + p + " %");
          
-         alert("Considering best 5 papers (language papers compulsory),\nYour obtained marks will be:\nTotal: " + t + " / 500" + "\nPercentage: " + u + " %");
+         alert("Considering best 5 papers,\nYour obtained marks will be:\nTotal: " + t + " / 500" + "\nPercentage: " + u + " %");
          
          if (u > 90) {alert("Congratulations!\nYou've got AA (Outstanding) grade for marks above 90%")} else {if (u > 80) {alert("Congratulations!\nYou've got A+ (Excellent) grade for marks above 80%")} else {if (u > 60) {alert("Congratulations!\nYou've got A (Very good) grade for marks above 60%")} else {alert("You've potential in you!\nI'm sorry, but you didn't get an A graded marks :(")}}}
     }   else    {
