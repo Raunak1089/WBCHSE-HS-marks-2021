@@ -2,102 +2,19 @@
  <html>
  <head>
 	 <title>HS marks calculator</title>
+	 	 <link rel="stylesheet" href="style.css">
  </head>
-	 	 <body style="color: black; font-weight: 300; font-size: 48px; text-align: center;font-family:helvetica;background-image: url('https://i.stack.imgur.com/O73ks.jpg');">
+	 	 <body>
 	
 	
-<style type="text/css">
-html, 
-body {
-height: 100%;
-}
-
-body {
-background-image: url(https://i.stack.imgur.com/O73ks.jpg); 
-background-repeat: no-repeat; background-size: 100% 500%;
-}
-
-input[type = "number"]{
-  margin: 0px 20px 0px;
-  float: left;
-  font-size : 36px;
-  text-align: center;
-  font-family:Courier;
-  border:0;
-  background: none;
-  display: block;
-  border: 2px solid #3498db;
-  padding: 14px 10px;
-  width: 150px; height: 52px;
-  outline: none;
-  color: #ff3456;
-  border-radius: 24px;
-  transition: 0.25s;
-}
-input[type = "number"]:focus{
-  margin: 0px 0px 0px;
-  font-size : 72px;
-  width: 280px; height: 100px;
-  background: #eeffee;
-  border: 10px solid #2ecc71;
-  color: #000000;
-}
-input[type = "submit"]{
-  font-size : 48px;
-	font-weight: 500; 
-	font-family:helvetica; 
-	width: 240px; height: 100px;
-  border:0;
-  background: none;
-  display: block;
-  margin: 20px auto;
-  text-align: center;
-  border: 2px solid #2ecc71;
-  padding: 14px 14px;
-  outline: none;
-  color: #2ecc71;
-  border-radius: 24px;
-  transition: 0.25s;
-  cursor: pointer;
-}
-input[type = "submit"]:hover{
-  font-size : 72px;
-	width: 330px; height: 130px;
-  color: white;
-  background: #2ecc71;
-}
-.select { 
-margin: 0px 330px 0px;
-font-size : 48px;
-font-weight: 70; 
-font-family: 'garamond', serif;
-appearance: none; 
-outline: 0; 
-background: #ffddff; 
-background-image: none; 
-width: 290px; height: 90px;
-color: red; 
-text-align-last:center;
-cursor: pointer; 
-border:1px solid red; 
-border-radius:100px; 
-position: relative; 
-display: block; 
-line-height: 2; 
-overflow: hidden; 
-padding-bottom:10px; 
-  
-            } 
-
-
-
-</style>
-
-	<p><u><b>Calculate</b> your HS marks (2021):</u></p>
+<div class = "head">
+	<p><b>Calculate</b> your HS marks (2021):</p>
+	</div>
 	<br>
+	<div class = "marks">
 	Enter the marks of <b>4 papers with highest marks</b> of your <b>Madhyamik exam</b>:
 	<p>
-		
+
 	<input id = "t1" type = "number" oninput = "javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "3" placeholder = "Marks 1" >
 
 <input id = "t2" type = "number" oninput = "javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "3" placeholder = "Marks 2" >
@@ -106,8 +23,8 @@ padding-bottom:10px;
 
 <input id = "t4" type = "number" oninput = "javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "3" placeholder = "Marks 4" >
 
-<br><br><br>
-<div style="text-align: center">
+</div>
+<div class = "sub">
 	Choose your <b>Additional subject</b> of your <b>HS exam</b>:
 	<p>
 <select id = "select1" class = "select" onchange="d()">
@@ -119,10 +36,10 @@ padding-bottom:10px;
 <option value = "2"> STATISTICS</option>
 
 </select>
-</div>
-	<br><br><br>
+
+	</div>
 	
-	
+	<div class = "marks">
 	Enter the marks of <b>class 11</b> papers as you've obtained in written exam of school:
 	<p> 
 	<input id = "t5" type = "number" oninput = "javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "2" placeholder = "Lang 1" >
@@ -133,13 +50,13 @@ padding-bottom:10px;
 
 <input id = "t7" type = "number" oninput = "javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "2" placeholder = "Bio" >
 
-	<br><br><br>
+</div>
 	
 	<p><p>
 	<input type="submit" value="SUBMIT" onclick="sbt()" > 
 
+<br><br>
 
-<br><br><br>
 <p style="font-size : 12px; color: blue; font-weight: 700;">
 *Empty fields will be considered as zero marks.
 <br>
