@@ -1,4 +1,5 @@
 body {
+user-select: none;
 height: 100%;
 font-size: 48px; 
 color: blue; 
