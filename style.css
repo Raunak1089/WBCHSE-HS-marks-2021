@@ -1,5 +1,4 @@
 body {
-user-select: none;
 height: 100%;
 font-size: 48px; 
 color: blue; 
@@ -9,6 +8,7 @@ background-image: url(https://i.stack.imgur.com/O73ks.jpg);
 background-repeat: no-repeat; 
 background-size: 100% 120%;
 background-attachment: fixed;
+user-select: none
 }
 
 input[type = "number"]
