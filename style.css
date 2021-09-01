@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,500,600,700&display=swap');
+
+
+
 body {
 height: 100%;
 font-size: 48px; 
 color: blue; 
 text-align: center;
-font-family:helvetica;
+font-family: 'Comfortaa';
 background-image: url(https://i.stack.imgur.com/O73ks.jpg); 
 background-repeat: no-repeat; 
 background-size: 100% 120%;
@@ -52,7 +56,7 @@ input:focus::placeholder { color: transparent; }
 input[type = "submit"]{
   font-size : 40px;
 	font-weight: 500; 
-	font-family:helvetica; 
+	font-family:'Comfortaa'; 
 	width: 240px; height: 100px;
   border:0;
   background: none;
