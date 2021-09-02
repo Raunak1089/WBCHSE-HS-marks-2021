@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,500,600,700&display=swap');
+	 @import url('https://fonts.googleapis.com/css?family=Comfortaa:400,500,600,700&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Abril Fatface:400,500,600,700&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Vollkorn:400,500,600,700&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
 
 
 
@@ -8,7 +12,8 @@ font-size: 48px;
 color: blue; 
 text-align: center;
 font-family: 'Comfortaa', sans-serif;
-background-image: url(https://i.stack.imgur.com/O73ks.jpg); 
+	background-image: radial-gradient(circle at top, #335476 50%, #304b67 60%, #2f4760 70%, #2c3f51 90%, #28323d 100.0%);
+
 background-repeat: no-repeat; 
 background-size: 100% 120%;
 background-attachment: fixed;
@@ -22,7 +27,7 @@ input[type = "number"]
   float: left;
   font-size : 36px;
   font-weight: 500; 
-  font-family: 'garamond', serif;
+  font-family: 'Vollkorn', serif;
   border:0;
   background: none;
   display: block;
@@ -31,7 +36,7 @@ input[type = "number"]
   padding: 14px 10px;
   width: 150px; height: 52px;
   outline: none;
-  color: #ff0000;
+  color: #ff0f87;
   border-radius: 24px;
   transition: 0.3s;
 }
@@ -49,14 +54,14 @@ input[type = "number"]:focus
   border-radius: 70px;
 }
 
-input[type = "number"]::placeholder {font-size: 36px; color: #ff837a;}
+input[type = "number"]::placeholder {font-size: 36px; color: #99d8ff;}
 
 input:focus::placeholder { color: transparent; }
 
-input[type = "submit"]{
+.container{
   font-size : 40px;
-	font-weight: 500; 
-        font-family: 'Comfortaa', sans-serif;
+	font-weight: 700; 
+  font-family: 'Raleway', sans-serif;
 	width: 240px; height: 100px;
   border:0;
   background: none;
@@ -66,23 +71,37 @@ input[type = "submit"]{
   border: 2px solid #2ecc71;
   padding: 14px 14px;
   outline: none;
+  text-decoration: none;
+  Letter-spacing: 7px;
   color: #2ecc71;
   border-radius: 24px;
-  transition: 0.2s;
+  -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+  transition: 0.4s;
   cursor: pointer;
 }
-input[type = "submit"]:hover{
+.container:hover{
+font-weight: 100; 
+color: #000;
+ background: #0f0;
+box-shadow: 0 0 10px #0f0,
+0 0 20px #0f0,
+0 0 40px #efe,
+0 0 80px #0fe,
+0 0 160px #0f0;
   font-size : 50px;
-	width: 400px; height: 100px;
-  color: #ccffcc;
-  background: #2ecc71;
+	width: 350px; height: 100px;
   border-radius: 70px;
 }
+.container span {
+position: relative;
+z-index: 100;
+}
+
 .select { 
 margin: 20px auto;
 font-size : 48px;
-font-weight: 70; 
-font-family: 'garamond', serif;
+font-weight: 500; 
+font-family: 'Montserrat', serif;
 appearance: none; 
 outline: 0; 
 background: none; 
@@ -99,7 +118,7 @@ line-height: 2;
 overflow: hidden; 
 padding-bottom:10px; 
 transition: 0.3s;
-  } 
+  } 
 
 .select:hover {
   width: 500px; height: 90px;
@@ -114,13 +133,12 @@ transition: 0.3s;
 margin: 60px 30px 0px;
 font-size :48px;
 font-weight: 70; 
-font-family: 'garamond', serif;
+font-family: 'Vollkorn', sans-serif;
 appearance: none; 
 outline: 0; 
-background: #ffff00; 
-background-image: none; 
+background-image: radial-gradient(#FFFFFF, #77899a, #335476);
 width: 95%; height: 100px;
-color: blue; 
+color: #b8f5ff; 
 text-align:center;
 cursor: pointer; 
 border:0px solid red; 
@@ -130,8 +148,14 @@ display: block;
 line-height: 1; 
 overflow: hidden; 
 padding-bottom:30px; 
-  } 
+transition: 2s;
+  } 
 
+.head:hover {
+  background-image: radial-gradient(#335476, #77899a, #FFFFFF);
+  box-shadow: 3px 3px 3px #333,
+  color: #00b5d1;
+}
 
 .marks { 
 margin: 0px 20px 50px;
@@ -141,8 +165,7 @@ font-family: 'Comfortaa', sans-serif;
 ;
 appearance: none; 
 outline: 0; 
-background: #c7ff99; 
-background-image: none; 
+background: linear-gradient(to right, hsl(200, 100%, 40%), hsl(170, 54%, 87%));
 width: 95%; height: 330px;
 color: blue; 
 text-align:center;
@@ -155,7 +178,16 @@ line-height: 1.2;
 overflow: hidden; 
 padding-bottom:0px; 
 padding-top:30px; 
-  } 
+transition: 0.3s;
+  } 
+  
+.marks:hover {
+  box-shadow: 3 3 3px #000,
+  width: 95%; height: 380px;
+  line-height: 1.4; 
+  background: linear-gradient(to bottom, hsl(170, 73%, 46%), hsl(170, 54%, 87%));
+  color: #680094;
+}
 
 .sub { 
 margin: 0px 20px 50px;
@@ -164,8 +196,7 @@ font-weight: 300;
 font-family: 'Comfortaa', sans-serif;
 appearance: none; 
 outline: 0; 
-background: #d9adff; 
-background-image: none; 
+background: linear-gradient(to top, hsl(200, 100%, 500%), hsl(175, 100%, 50%));
 width: 95%; height: 330px;
 color: blue; 
 text-align:center;
@@ -178,10 +209,13 @@ line-height: 1.5;
 overflow: hidden; 
 padding-bottom:0px; 
 padding-top:30px; 
-  } 
+transition: 0.3s;
+  } 
 
-.head:hover,.marks:hover,.sub:hover {
-  background: #e6f27c;
-  color: black;
+.sub:hover {
+ background: linear-gradient(to top, hsl(126, 100%, 50%), hsl(200, 100%, 500%));
+  width: 95%; height: 360px;
+  line-height: 1.6; 
+  color: #680094;
 }
 
