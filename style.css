@@ -1,9 +1,9 @@
-	 @import url('https://fonts.googleapis.com/css?family=Comfortaa:400,500,600,700&display=swap');
+
+  @import url('https://fonts.googleapis.com/css?family=Comfortaa:400,500,600,700&display=swap');
   @import url('https://fonts.googleapis.com/css?family=Abril Fatface:400,500,600,700&display=swap');
   @import url('https://fonts.googleapis.com/css?family=Vollkorn:400,500,600,700&display=swap');
   @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&display=swap');
   @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
-
 
 
 body {
@@ -12,12 +12,12 @@ font-size: 48px;
 color: blue; 
 text-align: center;
 font-family: 'Comfortaa', sans-serif;
-	background-image: radial-gradient(circle at top, #335476 50%, #304b67 60%, #2f4760 70%, #2c3f51 90%, #28323d 100.0%);
+background-image: radial-gradient(circle at top, #335476 50%, #304b67 60%, #2f4760 70%, #2c3f51 90%, #28323d 100.0%);
 
 background-repeat: no-repeat; 
 background-size: 100% 120%;
 background-attachment: fixed;
-user-select: none
+user-select: none;
 }
 
 input[type = "number"]
@@ -41,7 +41,6 @@ input[type = "number"]
   transition: 0.3s;
 }
 
-
 input[type = "number"]:focus
 {
   opacity: 1;
@@ -58,11 +57,11 @@ input[type = "number"]::placeholder {font-size: 36px; color: #99d8ff;}
 
 input:focus::placeholder { color: transparent; }
 
-.container{
+#container{
   font-size : 40px;
-	font-weight: 700; 
+font-weight: 700; 
   font-family: 'Raleway', sans-serif;
-	width: 240px; height: 100px;
+width: 240px; height: 100px;
   border:0;
   background: none;
   display: block;
@@ -79,25 +78,29 @@ input:focus::placeholder { color: transparent; }
   transition: 0.4s;
   cursor: pointer;
 }
-.container:hover{
+#container:hover{
 font-weight: 100; 
 color: #000;
- background: #0f0;
+background: #0f0;
 box-shadow: 0 0 10px #0f0,
-0 0 20px #0f0,
-0 0 40px #efe,
-0 0 80px #0fe,
-0 0 160px #0f0;
-  font-size : 50px;
-	width: 350px; height: 100px;
-  border-radius: 70px;
+            0 0 20px #0f0,
+            0 0 40px #efe,
+            0 0 80px #0fe,
+            0 0 160px #0f0;
+            0 0 20px #0f0,
+            0 0 40px #efe,
+            0 0 80px #0fe,
+            0 0 160px #0f0;
+font-size : 50px;
+width: 350px; height: 100px;
+border-radius: 70px;
 }
-.container span {
+#container span {
 position: relative;
 z-index: 100;
 }
 
-.select { 
+#select1 { 
 margin: 20px auto;
 font-size : 48px;
 font-weight: 500; 
@@ -118,9 +121,9 @@ line-height: 2;
 overflow: hidden; 
 padding-bottom:10px; 
 transition: 0.3s;
-  } 
+  }
 
-.select:hover {
+#select1:hover {
   width: 500px; height: 90px;
   border:5px solid #2ecc71; 
   background: white;
@@ -129,15 +132,17 @@ transition: 0.3s;
   padding-bottom:10px; 
 }
 
-.head { 
-margin: 60px 30px 0px;
-font-size :48px;
-font-weight: 70; 
+#head { 
+margin: 609px auto -674px; 
+font-size: 58px; 
+width: 95%; height: 145px;
+font-weight: 500; 
 font-family: 'Vollkorn', sans-serif;
 appearance: none; 
 outline: 0; 
-background-image: radial-gradient(#FFFFFF, #77899a, #335476);
-width: 95%; height: 100px;
+background-image: radial-gradient(#FFFFFF, #aaaaaa, #313131);
+background-size: 95% 345px;
+z-index: 222;
 color: #b8f5ff; 
 text-align:center;
 cursor: pointer; 
@@ -150,23 +155,30 @@ overflow: hidden;
 padding-bottom:30px; 
 transition: 2s;
   } 
+         .anm1{
+             animation: head 1.8s cubic-bezier(0.62, 0.19, 0.4, 0.99) ;
+             animation-fill-mode: forwards;
 
-.head:hover {
+         }
+@keyframes head{
+0%{opacity: 1; margin: 609px auto -674px; font-size: 58px; width: 95%; height: 145px; font-weight: 500; color: #b8f5ff; }
+100%{opacity: 1; margin: 40px auto 10px; font-size: 35px; width: 60%; height: 74px; font-weight: 100; color: black; }
+}
+
+#head:hover {
   background-image: radial-gradient(#335476, #77899a, #FFFFFF);
   box-shadow: 3px 3px 3px #333,
   color: #00b5d1;
 }
 
-.marks { 
-margin: 0px 20px 50px;
-font-size : 48px;
+.marks {  
+font-size: 58px;
 font-weight: 300; 
 font-family: 'Comfortaa', sans-serif;
-;
 appearance: none; 
 outline: 0; 
 background: linear-gradient(to right, hsl(200, 100%, 40%), hsl(170, 54%, 87%));
-width: 95%; height: 330px;
+width: 95%; height: 145px;
 color: blue; 
 text-align:center;
 cursor: pointer; 
@@ -182,25 +194,26 @@ transition: 0.3s;
   } 
   
 .marks:hover {
-  box-shadow: 3 3 3px #000,
+  box-shadow: 3 3 3px #000;
   width: 95%; height: 380px;
   line-height: 1.4; 
   background: linear-gradient(to bottom, hsl(170, 73%, 46%), hsl(170, 54%, 87%));
   color: #680094;
 }
 
-.sub { 
-margin: 0px 20px 50px;
-font-size :48px;
+#sub { 
+margin: -225px auto 460px; 
+font-size: 58px; 
+width: 95%; height: 145px;
 font-weight: 300; 
 font-family: 'Comfortaa', sans-serif;
 appearance: none; 
 outline: 0; 
 background: linear-gradient(to top, hsl(200, 100%, 500%), hsl(175, 100%, 50%));
-width: 95%; height: 330px;
 color: blue; 
 text-align:center;
 cursor: pointer; 
+z-index: 2;
 border:0px solid red; 
 border-radius:35px; 
 position: relative; 
@@ -211,11 +224,49 @@ padding-bottom:0px;
 padding-top:30px; 
 transition: 0.3s;
   } 
+.anm4 {
+             animation: sub 1.8s cubic-bezier(0.62, 0.19, 0.4, 0.99) ;
+             animation-fill-mode: forwards;
 
-.sub:hover {
- background: linear-gradient(to top, hsl(126, 100%, 50%), hsl(200, 100%, 500%));
+}
+@keyframes sub{
+0%{opacity: 1; margin: -225px auto 460px; font-size: 27px; width: 95%; height: 145px; }
+100%{opacity: 1; margin: 0px auto 50px; font-size :48px; width: 95%; height: 330px; }
+}
+
+#sub:hover {
+  background: linear-gradient(to top, hsl(126, 100%, 50%), hsl(200, 100%, 500%));
   width: 95%; height: 360px;
   line-height: 1.6; 
   color: #680094;
+}
+
+#marks1 {
+  margin: 446px auto 50px;
+  z-index: 1;
+}
+.anm2 {
+             animation: marks1 1.8s cubic-bezier(0.62, 0.19, 0.4, 0.99) ;
+             animation-fill-mode: forwards;
+
+}
+
+#marks2 {
+  margin: -635px auto 50px;
+  z-index: 3;
+}
+.anm3 {
+             animation: marks2 1.8s cubic-bezier(0.62, 0.19, 0.4, 0.99) ;
+             animation-fill-mode: forwards;
+
+}
+
+@keyframes marks1{
+0%{opacity: 1; margin: 444px auto 50px; font-size: 27px; width: 95%; height: 145px; }
+100%{opacity: 1; margin: 0px auto 50px; font-size: 48px; width: 95%; height: 330px; }
+}
+@keyframes marks2{
+0%{opacity: 1; margin: -635px auto 50px; font-size: 27px; width: 95%; height: 145px; }
+100%{opacity: 1; margin: 0px auto 50px; font-size : 48px; width: 95%; height: 330px; }
 }
 
