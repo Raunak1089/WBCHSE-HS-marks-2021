@@ -1,22 +1,26 @@
 <!DOCTYPE html>
- <html>
- <head>
-	 <title>HS marks calculator</title>
+<html>
+<head>
+<title>HS marks calculator</title>
 	 <link rel="stylesheet" href="style.css">
 	 <script src = "javascript.js"></script>
- </head>
-	 	 <body>
-	
-	
-<div class = "head">
-	<p><b>Calculate</b> your HS marks (2021):</p>
-	</div>
-	<br>
-	<div class = "marks">
-	Enter the marks of <b>4 papers with highest marks</b> of your <b>Madhyamik exam</b>:
-	<p>
+</head>
 
-	<input id = "t1" type = "number" oninput = "javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "3" placeholder = "Marks 1" >
+
+<div id = "head" onclick="h()">
+<p><b>Calculate</b> your HS marks (2021):</p>
+</div>
+<br>
+     
+             
+        <body> 
+            
+<div class = "marks" id= "marks1">
+Enter the marks of <b>4 papers with highest marks</b> of your <b>Madhyamik exam</b>:
+<p>
+        
+        
+<input id = "t1" type = "number" oninput = "javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "3" placeholder = "Marks 1" >
 
 <input id = "t2" type = "number" oninput = "javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "3" placeholder = "Marks 2" >
 
@@ -25,9 +29,9 @@
 <input id = "t4" type = "number" oninput = "javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "3" placeholder = "Marks 4" >
 
 </div>
-<div class = "sub">
-	Choose your <b>Additional subject</b> of your <b>HS exam</b>:
-	<p>
+<div id = "sub">
+Choose your <b>Additional subject</b> of your <b>HS exam</b>:
+<p>
 <select id = "select1" class = "select" onchange="d()">
 
 <option value = "3" disabled selected>CHOOSE</option>
@@ -38,12 +42,12 @@
 
 </select>
 
-	</div>
-	
-	<div class = "marks">
-	Enter the marks of <b>class 11</b> papers as you've obtained in written exam of school:
-	<p> 
-	<input id = "t5" type = "number" oninput = "javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "2" placeholder = "Lang 1" >
+</div>
+
+<div class = "marks" id= "marks2">
+Enter the marks of <b>class 11</b> papers as you've obtained in written exam of school:
+<p> 
+<input id = "t5" type = "number" oninput = "javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "2" placeholder = "Lang 1" >
 
 <input id = "t6" type = "number" oninput = "javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "2" placeholder = "Lang 2" >
 
@@ -52,10 +56,9 @@
 <input id = "t7" type = "number" oninput = "javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "2" placeholder = "Bio" >
 
 </div>
-	
-		
-	<p><p>
-	<input type="submit" class= "container" value="SUBMIT" onclick="sbt()" > 
+
+<p><p>
+<input type="submit" id= "container" value="SUBMIT" onclick="sbt()" >
 
 <br><br>
 
@@ -66,6 +69,6 @@
 Here's an <a href="https://wa.me/918961031819">alternative link</a>.</p>
 
 
-	
-	 </body>
- </html>
+</body>
+</html>
+
