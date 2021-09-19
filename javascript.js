@@ -1,3 +1,12 @@
+function h(){
+
+    head.classList.add("anm1");
+    marks1.classList.add("anm2");
+    marks2.classList.add("anm3");
+    sub.classList.add("anm4");
+            }
+
+
 function sbt() {
 
 var sub = document.getElementById("select1").value;
