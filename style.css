@@ -230,7 +230,7 @@ transition: 0.3s;
 
 }
 @keyframes sub{
-0%{opacity: 1; margin: -225px auto 460px; font-size: 27px; width: 95%; height: 145px; }
+0%{opacity: 0; margin: -225px auto 460px; font-size: 27px; width: 95%; height: 145px; }
 100%{opacity: 1; margin: 0px auto 50px; font-size :48px; width: 95%; height: 330px; }
 }
 
@@ -262,11 +262,11 @@ transition: 0.3s;
 }
 
 @keyframes marks1{
-0%{opacity: 1; margin: 444px auto 50px; font-size: 27px; width: 95%; height: 145px; }
+0%{opacity: 0; margin: 444px auto 50px; font-size: 27px; width: 95%; height: 145px; }
 100%{opacity: 1; margin: 0px auto 50px; font-size: 48px; width: 95%; height: 330px; }
 }
 @keyframes marks2{
-0%{opacity: 1; margin: -635px auto 50px; font-size: 27px; width: 95%; height: 145px; }
+0%{opacity: 0; margin: -635px auto 50px; font-size: 27px; width: 95%; height: 145px; }
 100%{opacity: 1; margin: 0px auto 50px; font-size : 48px; width: 95%; height: 330px; }
 }
 
