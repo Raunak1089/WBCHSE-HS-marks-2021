@@ -1,9 +1,9 @@
-
   @import url('https://fonts.googleapis.com/css?family=Comfortaa:400,500,600,700&display=swap');
   @import url('https://fonts.googleapis.com/css?family=Abril Fatface:400,500,600,700&display=swap');
   @import url('https://fonts.googleapis.com/css?family=Vollkorn:400,500,600,700&display=swap');
   @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&display=swap');
   @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+
 
 
 body {
@@ -12,10 +12,10 @@ font-size: 48px;
 color: blue; 
 text-align: center;
 font-family: 'Comfortaa', sans-serif;
-background-image: radial-gradient(circle at top, #335476 50%, #304b67 60%, #2f4760 70%, #2c3f51 90%, #28323d 100.0%);
-
+background-image: radial-gradient(ellipse at top, #8db8e1 0.0%, #4a8bcc 11.1%, #1d528a 22.2%, #1a3b5e 33.3%, #103d6a 44.4%, #2e1f63 55.6%, #171e26 66.7%, #293643 77.8%, #28323d 88.9%, #262e36 100.0%);
 background-repeat: no-repeat; 
-background-size: 100% 120%;
+background-size: 200% 120%;
+background-position: center;
 background-attachment: fixed;
 user-select: none;
 }
@@ -41,33 +41,34 @@ input[type = "number"]
   transition: 0.3s;
 }
 
+
 input[type = "number"]:focus
 {
   opacity: 1;
   margin: 0px 47px 0px;
   font-size : 52px;
   width: 100px; height: 52px;
-  background: #eeffee;
-  border: 5px solid #2ecc71;
-  color: #2ecc71;
+  background: #f8bdfc;
+  border: 5px solid #ac27e0;
+  color: black;
   border-radius: 70px;
 }
 
-input[type = "number"]::placeholder {font-size: 36px; color: #99d8ff;}
+input[type = "number"]::placeholder {font-size: 36px; color: black;}
 
 input:focus::placeholder { color: transparent; }
 
 #container{
   font-size : 40px;
-  font-weight: 700; 
+	font-weight: 700; 
   font-family: 'Raleway', sans-serif;
-  width: 240px; height: 100px;
+	width: 240px; height: 100px;
   border:0;
   background: none;
   display: block;
   margin: 20px auto;
   text-align: center;
-  opacity: 0;
+  opacity: 0; 
   border: 2px solid #2ecc71;
   padding: 14px 14px;
   outline: none;
@@ -78,16 +79,18 @@ input:focus::placeholder { color: transparent; }
   -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
   transition: 0.4s;
   cursor: pointer;
+  animation-delay: 4.8s;
 }
-.anm5 {
-             animation: cont 1.8s cubic-bezier(0.62, 0.19, 0.4, 0.99) ;
+         .anm5{
+             animation: cont 1.8s cubic-bezier(0.62, 0.19, 0.4, 0.99);
              animation-fill-mode: forwards;
 
-}
+         }
 @keyframes cont{
-0%{opacity: 0; }
-100%{opacity: 1; }
-}
+	0%{opacity: 0.5; transform: rotateY(90deg)}
+	100%{opacity: 1; transform: rotateY(1800deg)}
+	}
+
 #container:hover{
 font-weight: 100; 
 color: #000;
@@ -96,7 +99,7 @@ box-shadow: 0 0 10px #0f0,
             0 0 20px #0f0,
             0 0 40px #efe,
             0 0 80px #0fe,
-            0 0 160px #0f0;
+            0 0 160px #0f0,
             0 0 20px #0f0,
             0 0 40px #efe,
             0 0 80px #0fe,
@@ -131,7 +134,7 @@ line-height: 2;
 overflow: hidden; 
 padding-bottom:10px; 
 transition: 0.3s;
-  }
+  } 
 
 #select1:hover {
   width: 500px; height: 90px;
@@ -152,6 +155,7 @@ appearance: none;
 outline: 0; 
 background-image: radial-gradient(#FFFFFF, #aaaaaa, #313131);
 background-size: 95% 345px;
+box-shadow: 0px 64px 25px 36px rgba(30, 30, 60, 0.31);
 z-index: 222;
 color: #b8f5ff; 
 text-align:center;
@@ -166,29 +170,31 @@ padding-bottom:30px;
 transition: 2s;
   } 
          .anm1{
-             animation: head 1.8s cubic-bezier(0.62, 0.19, 0.4, 0.99) ;
+             animation: head 1.8s cubic-bezier(0.62, 0.19, 0.53, 1.31);
              animation-fill-mode: forwards;
 
          }
 @keyframes head{
-0%{opacity: 1; margin: 609px auto -674px; font-size: 58px; width: 95%; height: 145px; font-weight: 500; color: #b8f5ff; }
-100%{opacity: 1; margin: 40px auto 10px; font-size: 35px; width: 60%; height: 74px; font-weight: 100; color: black; }
-}
+	0%{opacity: 1; margin: 609px auto -674px; font-size: 58px; width: 95%; height: 145px; font-weight: 500; color: #b8f5ff; transform: rotateX(0deg); box-shadow: 0px 64px 25px 36px rgba(30, 30, 60, 0.31); }
+	20%{opacity: 0.8; margin: 600px auto -674px; font-size: 8px; width: 35%; height: 45px; font-weight: 500; color: transparent; transform: rotateX(1080deg); box-shadow: 0px 8px 2px -4px rgba(30, 30, 60, 1); }
+	100%{opacity: 1; margin: 40px auto 10px; font-size: 35px; width: 60%; height: 74px; font-weight: 100; color: black; transform: rotateX(2160deg); box-shadow: 0px 52px 27px -26px rgba(30, 30, 60, 0.68); }
+	}
+
 
 #head:hover {
   background-image: radial-gradient(#335476, #77899a, #FFFFFF);
-  box-shadow: 3px 3px 3px #333,
+  box-shadow: 3px 3px 3px #333;
   color: #00b5d1;
 }
 
 .marks {  
-font-size: 58px;
+font-size: 27px;
 font-weight: 300; 
 font-family: 'Comfortaa', sans-serif;
 appearance: none; 
 outline: 0; 
 background: linear-gradient(to right, hsl(200, 100%, 40%), hsl(170, 54%, 87%));
-width: 95%; height: 145px;
+width: 59.8%; height: 71px;
 color: blue; 
 text-align:center;
 cursor: pointer; 
@@ -201,28 +207,28 @@ line-height: 1.2;
 overflow: hidden; 
 padding-bottom:0px; 
 padding-top:30px; 
+filter: brightness(70%);
 transition: 0.3s;
   } 
   
 .marks:hover {
   box-shadow: 3 3 3px #000;
   width: 95%; height: 380px;
-  line-height: 1.4; 
   background: linear-gradient(to bottom, hsl(170, 73%, 46%), hsl(170, 54%, 87%));
   color: #680094;
 }
 
 #sub { 
-margin: -225px auto 460px; 
-font-size: 58px; 
-width: 95%; height: 145px;
+margin: -150px auto 50px; 
+font-size: 27px; 
+width: 59.8%; height: 71px;
 font-weight: 300; 
 font-family: 'Comfortaa', sans-serif;
 appearance: none; 
 outline: 0; 
 background: linear-gradient(to top, hsl(200, 100%, 500%), hsl(175, 100%, 50%));
 color: blue; 
-text-align:center;
+text-align: center;
 cursor: pointer; 
 z-index: 2;
 opacity: 0;
@@ -234,51 +240,75 @@ line-height: 1.5;
 overflow: hidden; 
 padding-bottom:0px; 
 padding-top:30px; 
+filter: brightness(70%);
 transition: 0.3s;
+animation-delay: 2.8s;
   } 
 .anm4 {
-             animation: sub 1.8s cubic-bezier(0.62, 0.19, 0.4, 0.99) ;
+             animation: sub 1s cubic-bezier(0.91, 0.59, 0.51, 0.74);
              animation-fill-mode: forwards;
 
 }
 @keyframes sub{
-0%{opacity: 0; margin: -225px auto 460px; font-size: 27px; width: 95%; height: 145px; }
-100%{opacity: 1; margin: 0px auto 50px; font-size :48px; width: 95%; height: 330px; }
-}
+	0%{opacity: 0; margin: -578px auto 50px; font-size: 27px; width: 59.8%; height: 71px; }
+	70%{opacity: 0.8; margin: -50.44px auto 50px; font-size: 7px; width: 40%; height: 50px; }
+	100%{opacity: 1; margin: 0px auto 50px; font-size: 48px; width: 95%; height: 330px; }
+	}
+
 
 #sub:hover {
   background: linear-gradient(to top, hsl(126, 100%, 50%), hsl(200, 100%, 500%));
   width: 95%; height: 360px;
-  line-height: 1.6; 
   color: #680094;
 }
 
 #marks1 {
-  margin: 446px auto 50px;
+  margin: -168px auto 50px;
   z-index: 1;
+  animation-delay: 1.8s;
 }
 .anm2 {
-             animation: marks1 1.8s cubic-bezier(0.62, 0.19, 0.4, 0.99) ;
+             animation: marks1 1s cubic-bezier(0.91, 0.59, 0.51, 0.74);
              animation-fill-mode: forwards;
 
 }
 
 #marks2 {
-  margin: -635px auto 50px;
+  margin: -151px auto 50px;
   z-index: 3;
+  animation-delay: 3.8s;
 }
 .anm3 {
-             animation: marks2 1.8s cubic-bezier(0.62, 0.19, 0.4, 0.99) ;
+             animation: marks2 1s cubic-bezier(0.91, 0.59, 0.51, 0.74);
              animation-fill-mode: forwards;
 
 }
 
-@keyframes marks1{
-0%{opacity: 0; margin: 444px auto 50px; font-size: 27px; width: 95%; height: 145px; }
-100%{opacity: 1; margin: 0px auto 50px; font-size: 48px; width: 95%; height: 330px; }
+#note {
+margin: auto auto 10px; 
+font-size : 12px; 
+color: white; 
+font-weight: 700; 
+opacity: 0;
+animation-delay: 4.8s; 
 }
-@keyframes marks2{
-0%{opacity: 0; margin: -635px auto 50px; font-size: 27px; width: 95%; height: 145px; }
-100%{opacity: 1; margin: 0px auto 50px; font-size : 48px; width: 95%; height: 330px; }
+.anm6 {
+              animation: note 0.8s linear infinite;
 }
 
+@keyframes marks1{
+	0%{opacity: 0; margin: -168px auto 50px; font-size: 27px; width: 59.8%; height: 71px; }
+	70%{opacity: 0.8; margin: 35.3px auto 50px; font-size: 7px; width: 40%; height: 50px; }
+	100%{opacity: 1; margin: 0px auto 50px; font-size: 48px; width: 95%; height: 330px; }
+	}
+@keyframes marks2{
+	0%{opacity: 0; margin: -988px auto 50px; font-size: 27px; width: 59.8%; height: 71px; }
+	70%{opacity: 0.8; margin: -171.2px auto 50px; font-size: 7px; width: 40%; height: 50px; }
+	100%{opacity: 1; margin: 0px auto 50px; font-size: 48px; width: 95%; height: 330px; }
+	}
+
+@keyframes note{
+	0%{opacity: 0; }
+	50%{opacity: 1; }
+	100%{opacity: 0;}
+	}
