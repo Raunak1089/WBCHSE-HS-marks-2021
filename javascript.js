@@ -1,13 +1,22 @@
-function h(){
+    function h(){
 
     head.classList.add("anm1");
     marks1.classList.add("anm2");
-    marks2.classList.add("anm3");
     sub.classList.add("anm4");
+    marks2.classList.add("anm3");
     container.classList.add("anm5");
+    note.classList.add("anm6");
             }
+            
+function hoverin(x) {
+  x.style.filter = "brightness(150%)";
+}
 
-
+function hoverout(x) {
+  x.style.filter = "brightness(70%)";
+}
+           
+    
 function sbt() {
 
 var sub = document.getElementById("select1").value;
@@ -150,4 +159,4 @@ var u = (Math.round(100 * t / 5) / 100);
 
     
 };
-
+    
