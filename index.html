@@ -1,74 +1,80 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>HS marks calculator</title>
-	 <link rel="stylesheet" href="style.css">
-	 <script src = "javascript.js"></script>
+ <html>
+ <head>
+ 	 	 <link rel="stylesheet" href="style.css">
+	 	 <script src = "javascript.js"></script>
+	 <title>HS marks calculator</title>
+
 </head>
-
-
-<div id = "head" onclick="h()">
-<p><b>Calculate</b> your HS marks (2021):</p>
-</div>
-<br>
-     
+	 	 
+	
+	
+<div id = "head"  onmousedown="h()" ontouchstart="h()">
+	<p><b>Calculate</b> your HS marks (2021):</p>
+	</div>
+	<br>
+  
+   
              
-        <body> 
+  <body id= "bd"> 
             
-<div class = "marks" id= "marks1">
-Enter the marks of <b>4 papers with highest marks</b> of your <b>Madhyamik exam</b>:
-<p>
-        
-        
-<input id = "t1" type = "number" oninput = "javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "3" placeholder = "Marks 1" >
-
-<input id = "t2" type = "number" oninput = "javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "3" placeholder = "Marks 2" >
-
-<input id = "t3" type = "number" oninput = "javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "3" placeholder = "Marks 3" >
-
-<input id = "t4" type = "number" oninput = "javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "3" placeholder = "Marks 4" >
-
-</div>
-<div id = "sub">
-Choose your <b>Additional subject</b> of your <b>HS exam</b>:
-<p>
-<select id = "select1" class = "select" onchange="d()">
-
-<option value = "3" disabled selected>CHOOSE</option>
-
-<option value = "1"> BIOLOGY</option>
-
-<option value = "2"> STATISTICS</option>
-
-</select>
-
-</div>
-
-<div class = "marks" id= "marks2">
-Enter the marks of <b>class 11</b> papers as you've obtained in written exam of school:
-<p> 
-<input id = "t5" type = "number" oninput = "javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "2" placeholder = "Lang 1" >
-
-<input id = "t6" type = "number" oninput = "javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "2" placeholder = "Lang 2" >
-
-<input id = "t8" type = "number" oninput = "javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "2" placeholder = "Maths" >
-
-<input id = "t7" type = "number" oninput = "javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "2" placeholder = "Bio" >
-
-</div>
-
-<p><p>
-<input type="submit" id= "container" value="SUBMIT" onclick="sbt()" >
-
-<br><br>
-
-<p style="font-size : 12px; color: white; font-weight: 700;">
-*Empty fields will be considered as zero marks.
-<br>
-**<a href="https://wa.me/918240921747">Contact </a> the developer of this program on WhatsApp to request more such programs.
-Here's an <a href="https://wa.me/918961031819">alternative link</a>.</p>
-
-
-</body>
-</html>
-
+    <div class = "marks" id= "marks1" onmousedown="hoverin(this)" ontouchstart="hoverin(this)" onmouseout="hoverout(this)">
+    Enter the marks of <b>4 papers with highest marks</b> of your <b>Madhyamik exam</b>:
+    <p>
+          
+          
+  <input id = "t1" type = "number" oninput = "javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "3" placeholder = "Marks 1" >
+  
+  <input id = "t2" type = "number" oninput = "javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "3" placeholder = "Marks 2" >
+  
+  <input id = "t3" type = "number" oninput = "javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "3" placeholder = "Marks 3" >
+  
+  <input id = "t4" type = "number" oninput = "javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "3" placeholder = "Marks 4" >
+  
+  </div>
+  <div id = "sub" onmousedown="hoverin(this)" ontouchstart="hoverin(this)" onmouseout="hoverout(this)">
+    Choose your <b>Additional subject</b> of your <b>HS exam</b>:
+    <p>
+  <select id = "select1" class = "select" onchange="d()">
+  
+  <option value = "3" disabled selected>CHOOSE</option>
+  
+  <option value = "1"> BIOLOGY</option>
+  
+  <option value = "2"> STATISTICS</option>
+  
+  </select>
+  
+    </div>
+    
+    <div class = "marks" id= "marks2" onmousedown="hoverin(this)" ontouchstart="hoverin(this)" onmouseout="hoverout(this)">
+    Enter the marks of <b>class 11</b> papers as you've obtained in written exam of school:
+    <p> 
+  <input id = "t5" type = "number" oninput = "javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "2" placeholder = "Lang 1" >
+  
+  <input id = "t6" type = "number" oninput = "javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "2" placeholder = "Lang 2" >
+  
+  <input id = "t8" type = "number" oninput = "javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "2" placeholder = "Maths" >
+  
+  <input id = "t7" type = "number" oninput = "javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength = "2" placeholder = "Bio" >
+  
+  </div>
+    
+    <p><p>
+    <input type="submit" id= "container" value="SUBMIT" onclick="sbt()" > 
+  
+  <br><br>
+  
+  <p id = "note">
+  *Empty fields will be considered as zero marks.
+  <br>
+  **<a href="https://wa.me/918240921747">Contact </a> the developer of this program on WhatsApp to request more such programs.
+  Here's an <a href="https://wa.me/918961031819">alternative link</a>.
+  <br><br><br>
+  © All rights reserved
+  </p>
+  
+  
+	
+	 </body>
+ </html>
