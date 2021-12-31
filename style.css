@@ -60,9 +60,9 @@ input:focus::placeholder { color: transparent; }
 
 #container{
   font-size : 40px;
-	font-weight: 700; 
+  font-weight: 700; 
   font-family: 'Raleway', sans-serif;
-	width: 240px; height: 100px;
+  width: 240px; height: 100px;
   border:0;
   background: none;
   display: block;
